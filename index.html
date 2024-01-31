@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('background_photo.jpg'); /* Replace with your background photo */
+            background-image: url('Pinkcloud.jpg'); /* Replace with your background photo */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -42,10 +42,18 @@
 </head>
 <body>
 
+<!-- Page 1: Will you be my Valentine? -->
+<div id="page1">
+    <img id="valentineImage" src="cute.jpg" alt="Will you be my Valentine?">
+    <h2>Will you be my Valentine?</h2>
+    <button onclick="checkAnswer('yes')">Yes</button>
+    <button onclick="checkAnswer('no')">No</button>
+</div>
+
 <!-- Page 2: YAY! -->
 <div id="page2" style="display: none;">
-    <img src="valentine_image2.jpg" alt="YAY!">
-    <p>YAY! You said yes. Let's celebrate!</p>
+    <img src="kissy.gif" alt="YAY!">
+    <p>You are now trapped forever and ever! Love you!</p>
 
  <!-- Audio element added here -->
  <audio src="/music/good_enough.mp3" controls>
